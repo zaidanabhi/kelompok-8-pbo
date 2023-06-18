@@ -24,7 +24,7 @@
         android:ems="10"
         android:id="@+id/angka_pertama"
         android:hint="Masukkan angka pertama"
-        android:textSize="14sp"
+        android:textSize="12sp"
         android:layout_below="@+id/textView5"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -43,7 +43,7 @@
         android:textSize="14sp" />
 
     <TextView
-        android:text="MASUKKAN DUA ANGKA"
+        android:text="MASUKKAN ANGKA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView5"
