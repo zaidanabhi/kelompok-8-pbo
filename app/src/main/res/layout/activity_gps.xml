@@ -9,7 +9,7 @@
         android:id="@+id/location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lokasi GPS Sekarang"
+        android:text="Lokasi Sekarang"
         android:textSize="24sp"
         android:textStyle="bold" />
     <Button
