@@ -7,29 +7,55 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class LingkaranActivity extends AppCompatActivity {
 
-    Button hitung;
+    Button btnkliling, btnluas;
     EditText jari2;
-    TextView nilai;
+    TextView hslkll, hslluas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lingkaran);
 
-        hitung = (Button) findViewById(R.id.hitung);
+        btnkliling = (Button) findViewById(R.id.btnkliling);
+        btnluas = findViewById(R.id.btnluas);
         jari2 = (EditText) findViewById(R.id.jari2);
-        nilai = (TextView) findViewById(R.id.nilai);
+        hslkll = (TextView) findViewById(R.id.hslkll);
+        hslluas = findViewById(R.id.hslluas);
 
-        hitung.setOnClickListener(new Button.OnClickListener() {
-            @Override public void onClick(View v) {
-                double jari = Double.parseDouble(jari2.getText().toString());
-                double phi = 3.14;
-                double luas = phi*jari*jari;
-                double keliling = 2*phi*jari;
-                nilai.setText("Luas Lingkaran : " + Double.toString(luas) + "\nKeliling Lingkaran : " + Double.toString(keliling) + "");
-            }});
+
+        // HITUNG KELILING
+        btnkliling.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (jari2.getText().toString().trim().isEmpty()) {
+                    Toast.makeText(LingkaranActivity.this, "Tidak boleh kosong", Toast.LENGTH_SHORT).show();
+                } else {
+                    double radius = Double.parseDouble(jari2.getText().toString());
+                    double phi = 3.14;
+                    double keliling = 2 * phi * radius;
+                    hslkll.setText(String.valueOf(keliling));
+                }
+            }
+        });
+
+        // HITUNG LUAS
+        btnluas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (jari2.getText().toString().trim().isEmpty()) {
+                    Toast.makeText(LingkaranActivity.this, "Tidak boleh kosong", Toast.LENGTH_SHORT).show();
+                } else {
+                    double radius = Double.parseDouble(jari2.getText().toString());
+                    double phi = 3.14;
+                    double luas = phi * radius * radius;
+                    hslluas.setText(String.valueOf(luas));
+                }
+            }
+        });
+
     }
 }
