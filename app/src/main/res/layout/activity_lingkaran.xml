@@ -23,7 +23,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Input Jari-Jari Lingkaran"
-        android:hint="Masukkan Jari-Jari"
         android:id="@+id/jari2"/>
 
     <Button
