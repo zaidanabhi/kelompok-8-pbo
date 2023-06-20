@@ -56,7 +56,12 @@
         <activity android:name=".HitungBMIActivity" />
         <activity
             android:name=".CalculatorActivity"
+            android:exported="true"
             android:label="Kalkulator Advance" />
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         <activity android:name=".SignupActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".BilanganActivity" />
@@ -70,7 +75,6 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
