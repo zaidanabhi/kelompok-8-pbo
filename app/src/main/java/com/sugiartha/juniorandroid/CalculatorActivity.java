@@ -1,20 +1,26 @@
 package com.sugiartha.juniorandroid;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import org.mozilla.javascript.Context;
+import org.mozilla.javascript.Scriptable;
+
 
 public class CalculatorActivity extends AppCompatActivity {
 
     //Deklarasi variable
-    EditText angka_pertama, angka_kedua;
-    Button tambah, kurang, kali, bagi, bersihkan;
-    TextView hasil;
+    Button btnHapus, btnPersen, btnBagi, btnKali, btnKurang, btnTambah, btnSamaDengan,
+            btnTitik, btnNol, btnSatu, btnDua, btnTiga, btnEmpat, btnLima, btnEnam, btnTujuh,
+            btnDelapan, btnSembilan;
+    String proses;
+    ImageView btnBackspace;
+    TextView angkaMasuk, angkaKeluar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,91 +29,207 @@ public class CalculatorActivity extends AppCompatActivity {
 
         //getSupportActionBar().setTitle("");
 
-        angka_pertama = (EditText) findViewById(R.id.angka_pertama);
-        angka_kedua = (EditText) findViewById(R.id.angka_kedua);
-        tambah = (Button)findViewById(R.id.tambah);
-        kurang = (Button)findViewById(R.id.kurang);
-        kali = (Button)findViewById(R.id.kali);
-        bagi = (Button)findViewById(R.id.bagi);
-        bersihkan = (Button) findViewById(R.id.bersihkan);
-        hasil = (TextView) findViewById(R.id.hasil);
+        btnNol = findViewById(R.id.btnNol);
+        btnSatu = findViewById(R.id.btnSatu);
+        btnDua = findViewById(R.id.btnDua);
+        btnTiga = findViewById(R.id.btnTiga);
+        btnEmpat = findViewById(R.id.btnEmpat);
+        btnLima = findViewById(R.id.btnLima);
+        btnEnam = findViewById(R.id.btnEnam);
+        btnTujuh = findViewById(R.id.btnTujuh);
+        btnDelapan = findViewById(R.id.btnDelapan);
+        btnSembilan = findViewById(R.id.btnSembilan);
 
-        tambah.setOnClickListener(new View.OnClickListener() {
+        btnHapus = findViewById(R.id.btnHapus);
+        btnBackspace = (ImageView) findViewById(R.id.btnBackspace);
+        btnPersen = findViewById(R.id.btnPersen);
+        btnBagi = findViewById(R.id.btnBagi);
+        btnKali = findViewById(R.id.btnKali);
+        btnKurang = findViewById(R.id.btnKurang);
+        btnTambah = findViewById(R.id.btnTambah);
+        btnSamaDengan = findViewById(R.id.btnSamaDengan);
+        btnTitik = findViewById(R.id.btnTitik);
+
+        angkaMasuk = findViewById(R.id.angkaMasuk);
+        angkaKeluar = findViewById(R.id.angkaKeluar);
+
+        btnHapus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if((angka_pertama.getText().length()>0) && (angka_kedua.getText().length()>0))
-                {
-                    double angka1 = Double.parseDouble(angka_pertama.getText().toString());
-                    double angka2 = Double.parseDouble(angka_kedua.getText().toString());
-                    double result = angka1 + angka2;
-                    hasil.setText(Double.toString(result));
-                }
-                else {
-                    Toast toast = Toast.makeText(CalculatorActivity.this,
-                            "Mohon masukkan Angka pertama & Kedua", Toast.LENGTH_LONG);
-                    toast.show();
+                angkaMasuk.setText("");
+                angkaKeluar.setText("");
+            }
+        });
+
+        btnNol.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                proses = angkaMasuk.getText().toString();
+                angkaMasuk.setText(proses + "0");
+            }
+        });
+
+        btnSatu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                proses = angkaMasuk.getText().toString();
+                angkaMasuk.setText(proses + "1");
+            }
+        });
+
+        btnDua.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                proses = angkaMasuk.getText().toString();
+                angkaMasuk.setText(proses + "2");
+            }
+        });
+
+        btnTiga.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                proses = angkaMasuk.getText().toString();
+                angkaMasuk.setText(proses + "3");
+            }
+        });
+
+        btnEmpat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                proses = angkaMasuk.getText().toString();
+                angkaMasuk.setText(proses + "4");
+            }
+        });
+
+        btnLima.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                proses = angkaMasuk.getText().toString();
+                angkaMasuk.setText(proses + "5");
+            }
+        });
+
+        btnEnam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                proses = angkaMasuk.getText().toString();
+                angkaMasuk.setText(proses + "6");
+            }
+        });
+
+        btnTujuh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                proses = angkaMasuk.getText().toString();
+                angkaMasuk.setText(proses + "7");
+            }
+        });
+
+        btnDelapan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                proses = angkaMasuk.getText().toString();
+                angkaMasuk.setText(proses + "8");
+            }
+        });
+
+        btnSembilan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                proses = angkaMasuk.getText().toString();
+                angkaMasuk.setText(proses + "9");
+            }
+        });
+
+        btnTambah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                proses = angkaMasuk.getText().toString();
+                angkaMasuk.setText(proses + "+");
+            }
+        });
+
+        btnKurang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                proses = angkaMasuk.getText().toString();
+                angkaMasuk.setText(proses + "-");
+            }
+        });
+
+        btnKali.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                proses = angkaMasuk.getText().toString();
+                angkaMasuk.setText(proses + "x");
+            }
+        });
+
+        btnBagi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                proses = angkaMasuk.getText().toString();
+                angkaMasuk.setText(proses + "/");
+            }
+        });
+
+        btnTitik.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                proses = angkaMasuk.getText().toString();
+                angkaMasuk.setText(proses + ".");
+            }
+        });
+
+        btnPersen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                proses = angkaMasuk.getText().toString();
+                angkaMasuk.setText(proses + "%");
+            }
+        });
+
+        btnNol.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                proses = angkaMasuk.getText().toString();
+                angkaMasuk.setText(proses + "0");
+            }
+        });
+
+        btnBackspace.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String word = angkaMasuk.getText().toString();
+                int input = word.length();
+                if(input > 0) {
+                    angkaMasuk.setText(word.substring(0, input - 1));
                 }
             }
         });
 
-        kurang.setOnClickListener(new View.OnClickListener() {
+        btnSamaDengan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if((angka_pertama.getText().length()>0) && (angka_kedua.getText().length()>0))
-                {
-                    double angka1 = Double.parseDouble(angka_pertama.getText().toString());
-                    double angka2 = Double.parseDouble(angka_kedua.getText().toString());
-                    double result = angka1 - angka2;
-                    hasil.setText(Double.toString(result));
-                }
-                else {
-                    Toast toast = Toast.makeText(CalculatorActivity.this, "Mohon masukkan Angka pertama & Kedua", Toast.LENGTH_LONG);
-                    toast.show();
-                }
-            }
-        });
+                proses = angkaMasuk.getText().toString();
 
-        kali.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if((angka_pertama.getText().length()>0) && (angka_kedua.getText().length()>0))
-                {
-                    double angka1 = Double.parseDouble(angka_pertama.getText().toString());
-                    double angka2 = Double.parseDouble(angka_kedua.getText().toString());
-                    double result = angka1 * angka2;
-                    hasil.setText(Double.toString(result));
-                }
-                else {
-                    Toast toast = Toast.makeText(CalculatorActivity.this, "Mohon masukkan Angka pertama & Kedua", Toast.LENGTH_LONG);
-                    toast.show();
-                }
-            }
-        });
+                proses = proses.replaceAll("x", "*");
+                proses = proses.replaceAll("%", "/100");
 
-        bagi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if((angka_pertama.getText().length()>0) && (angka_kedua.getText().length()>0))
-                {
-                    double angka1 = Double.parseDouble(angka_pertama.getText().toString());
-                    double angka2 = Double.parseDouble(angka_kedua.getText().toString());
-                    double result = angka1 / angka2;
-                    hasil.setText(Double.toString(result));
-                }
-                else {
-                    Toast toast = Toast.makeText(CalculatorActivity.this, "Mohon masukkan Angka pertama & Kedua", Toast.LENGTH_LONG);
-                    toast.show();
-                }
-            }
-        });
+                Context rhino = Context.enter();
 
-        bersihkan.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                angka_pertama.setText("");
-                angka_kedua.setText("");
-                hasil.setText("0");
-                angka_pertama.requestFocus();
+                rhino.setOptimizationLevel(-1);
+
+                String finalResult = "";
+
+                try {
+                    Scriptable scriptable = rhino.initSafeStandardObjects();
+                    finalResult = rhino.evaluateString(scriptable,proses, "javascript", 1, null).toString();
+                }catch (Exception e){
+                    finalResult = "0";
+                }
+
+                angkaKeluar.setText(finalResult);
             }
         });
     }
