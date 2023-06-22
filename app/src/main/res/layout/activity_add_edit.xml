@@ -6,7 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/green"
     tools:context=".AddEditActivity">
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo_dts"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_height="wrap_content"/>
 
     <EditText
         android:id="@+id/txt_id"
@@ -16,16 +25,28 @@
         android:visibility="gone"/>
 
     <EditText
+        android:layout_marginTop="20dp"
+        android:gravity="center"
         android:id="@+id/txt_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#FFFFFF"
+        android:minLines="3"
         android:hint="Input Nama"/>
 
     <EditText
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
         android:id="@+id/txt_address"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#FFFFFF"
+        android:minLines="3"
         android:hint="Input Alamat"/>
 
     <LinearLayout
@@ -36,16 +57,26 @@
 
         <Button
             android:id="@+id/btn_submit"
+            android:textColor="#FFFFFF"
             android:layout_weight="0.5"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/buttonbulat"
+            android:minLines="3"
             android:text="Submit"/>
 
         <Button
             android:id="@+id/btn_cancel"
+            android:textColor="#FFFFFF"
             android:layout_weight="0.5"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttonbulat"
+            android:minLines="3"
             android:text="Cancel"/>
 
     </LinearLayout>
