@@ -25,7 +25,8 @@
         android:layout_gravity="center"
         android:textStyle="bold"
         android:textColor="@color/cardview_dark_background"
-        android:textSize="18sp"
+        android:textSize="20sp"
+        android:fontFamily="serif-monospace"
         android:text="LUAS DAN KELILING LINGKARAN"/>
 
 
@@ -33,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="150sp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="30dp"
+        android:layout_margin="20dp"
         android:padding="10dp"
         android:id="@+id/lingkaran"
         android:src="@drawable/ketlingkarann"/>
@@ -69,6 +70,7 @@
             android:textSize="15dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
+            android:layout_margin="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
@@ -81,7 +83,7 @@
             android:textSize="15dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:layout_marginLeft="10dp"
+            android:layout_margin="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
