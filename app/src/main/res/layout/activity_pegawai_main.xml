@@ -9,44 +9,92 @@
     tools:context=".PegawaiMainActivity">
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MYSQL"
+        android:padding="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"/>
+
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
         android:text="Nama Pegawai" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="14dp"
         android:id="@+id/editTextName" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
         android:text="Posisi" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="14dp"
         android:id="@+id/editTextDesg" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
         android:text="Gaji" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="14dp"
         android:id="@+id/editTextSalary" />
+    
+    
+    <LinearLayout
+        android:id="@+id/pgwai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextSalary"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tambah Pegawai"
-        android:id="@+id/buttonAdd" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Daftar Pegawai"
-        android:id="@+id/buttonView" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Pegawai"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/putih"
+            android:background="@drawable/buttonbulatt"
+            android:id="@+id/buttonAdd" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonbulatt"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/putih"
+            android:text="Daftar Pegawai"
+            android:id="@+id/buttonView" />
+
+    </LinearLayout>
 
 </LinearLayout>
