@@ -39,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/buttonbulat"
+        android:textColor="@color/putih"
         android:textStyle="bold"
         android:paddingRight="15dp"
         android:paddingLeft="15dp"
@@ -49,9 +50,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/buttonbulat"
+        android:layout_marginLeft="10dp"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:layout_gravity="center"
+        android:textColor="@color/putih"
         android:textStyle="bold"
         android:text="Simpan ke External" />
 
