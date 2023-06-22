@@ -31,6 +31,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.faendir.rhino:rhino-android:1.5.2'
+    implementation 'com.airbnb.android:lottie:6.0.1'
+
 
     //
     implementation 'com.synnapps:carouselview:0.1.4'
