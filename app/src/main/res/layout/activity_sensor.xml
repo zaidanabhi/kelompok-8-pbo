@@ -23,7 +23,7 @@
         android:layout_width="500dp"
         android:layout_height="500dp"
         android:layout_gravity="center"
-        app:lottie_rawRes="@raw/sensortimer"
+        app:lottie_rawRes="@raw/sensor_anim"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"/>
 
