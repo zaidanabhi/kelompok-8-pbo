@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
     tools:context=".HitungBMIActivity">
 
     <EditText
@@ -13,22 +14,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColorHint="@color/putih"
+        android:textColor="@color/putih"
         android:hint="Isikan berat badan (kg)"
-        android:inputType="number" />
+        android:inputType="number"
+        android:fontFamily="@font/montserrat_regular"
+        />
 
     <EditText
         android:id="@+id/txtTinggiBadan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColorHint="@color/putih"
+        android:textColor="@color/putih"
         android:hint="Isikan tinggi badan (m)"
-        android:inputType="number|numberDecimal" />
+        android:inputType="number|numberDecimal"
+        android:fontFamily="@font/montserrat_regular"
+        />
 
     <Button
         android:id="@+id/btnCekBMI"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CEK BMI" />
+        android:background="@drawable/rounded_corner"
+        android:text="CEK BMI"
+        android:textColor="@color/putih"
+        android:fontFamily="@font/montserrat_regular"
+        />
 
     <TextView
         android:id="@+id/txtStatusBadan"
@@ -36,6 +49,10 @@
         android:layout_height="wrap_content"
         android:text="Status Badan"
         android:textAlignment="center"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@color/putih"
+        />
 
 </LinearLayout>
