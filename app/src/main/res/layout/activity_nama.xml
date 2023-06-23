@@ -8,10 +8,11 @@
     tools:context=".NamaActivity">
 
     <TextView
+        android:fontFamily="@font/montserrat_bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="DATA PESERTA VSGA"
-        android:textSize="40dp"
+        android:textSize="30dp"
         android:layout_gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -19,6 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:fontFamily="@font/montserrat_regular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="50dp"
@@ -26,18 +28,21 @@
         android:text="Nama : "/>
 
     <EditText
+        android:fontFamily="@font/montserrat_regular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="Masukkan Nama Anda"
         android:id="@+id/editNama"/>
 
     <Button
+        android:fontFamily="@font/montserrat_bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OKE"
+        android:text="OK"
         android:id="@+id/btnOk"/>
 
     <TextView
+        android:fontFamily="@font/montserrat_regular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Data Para Peserta"
