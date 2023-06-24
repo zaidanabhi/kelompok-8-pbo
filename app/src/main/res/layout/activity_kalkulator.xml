@@ -10,35 +10,88 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/hitam"
         android:text="Input Angka Pertama"/>
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Angka Pertama"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/hitam"
         android:id="@+id/angka1"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/hitam"
         android:text="Input Angka Kedua"/>
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/hitam"
         android:hint="Angka Kedua"
         android:id="@+id/angka2"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HITUNG"
-        android:id="@+id/btnHitung"/>
+        android:layout_weight="1"
+        android:text="+"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@color/putih"
+        android:id="@+id/btnPlus"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_corner"
+            android:textColor="@color/putih"
+            android:id="@+id/btnMinus"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="x"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_corner"
+            android:textColor="@color/putih"
+            android:id="@+id/btnKali"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="/"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_corner"
+            android:textColor="@color/putih"
+            android:id="@+id/btnBagi"/>
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hasil"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="24dp"
+        android:textColor="@color/hitam"
         android:id="@+id/txtHasil"/>
 
 </LinearLayout>
