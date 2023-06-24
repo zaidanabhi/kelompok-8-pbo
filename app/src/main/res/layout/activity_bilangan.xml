@@ -5,29 +5,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".BilanganActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Insert Angka" />
+        android:text="Input Number"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="50dp"/>
 
-    <EditText
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Masukkan Sembarang Angka"
-        android:id="@+id/angka"/>
+        android:hint="Enter any Number"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/angka"
+            android:inputType="number"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Proses"
-        android:id="@+id/proses"/>
+        android:text="Check"
+        android:id="@+id/proses"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bilangan"
-        android:id="@+id/bilangan"/>
+        android:text="Result"
+        android:id="@+id/bilangan"
+        android:textSize="18sp"
+        android:textColor="#666666"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"/>
 
 </LinearLayout>
