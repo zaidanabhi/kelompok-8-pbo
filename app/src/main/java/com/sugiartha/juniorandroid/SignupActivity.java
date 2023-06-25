@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 
 public class SignupActivity extends AppCompatActivity {
@@ -15,7 +17,10 @@ public class SignupActivity extends AppCompatActivity {
     Spinner spin;
     String spin_val;
     String[] gender = { "Laki-Laki", "Perempuan" };
+
     //array of strings used to populate the spinner
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +31,32 @@ public class SignupActivity extends AppCompatActivity {
         buttonpindah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                EditText namelengkap = findViewById(R.id.namelengkap);
+                EditText username = findViewById(R.id.username);
+                EditText password = findViewById(R.id.password);
+
+                String name = namelengkap.getText().toString().trim();
+                String user = username.getText().toString().trim();
+                String pass = password.getText().toString().trim();
+
+                if (name.isEmpty()) {
+                    namelengkap.setError("Mohon input nama anda");
+                    namelengkap.requestFocus();
+                    return;
+                }
+
+                if (user.isEmpty()) {
+                    username.setError("mohon input username anda");
+                    username.requestFocus();
+                    return;
+                }
+
+                if (pass.isEmpty()) {
+                    password.setError("mohon input password anda");
+                    password.requestFocus();
+                    return;
+                }
+
                 Intent intent = new Intent(SignupActivity.this, MainActivity.class);
                 startActivity(intent);
             }
@@ -51,5 +82,8 @@ public class SignupActivity extends AppCompatActivity {
         ArrayAdapter<String> spin_adapter = new ArrayAdapter<String>(SignupActivity.this, android.R.layout.simple_spinner_item, gender);
         // setting adapters to spinners
         spin.setAdapter(spin_adapter);
+
+
+
     }
 }
