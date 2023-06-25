@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorPrimaryDark"
     tools:context=".HitungBMIActivity">
 
     <EditText
@@ -14,8 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:textColorHint="@color/putih"
-        android:textColor="@color/putih"
         android:hint="Isikan berat badan (kg)"
         android:inputType="number"
         android:fontFamily="@font/montserrat_regular"
@@ -26,8 +23,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:textColorHint="@color/putih"
-        android:textColor="@color/putih"
         android:hint="Isikan tinggi badan (m)"
         android:inputType="number|numberDecimal"
         android:fontFamily="@font/montserrat_regular"
@@ -37,22 +32,31 @@
         android:id="@+id/btnCekBMI"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/rounded_corner"
+        android:background="@drawable/rounded_cornerbiru"
         android:text="CEK BMI"
         android:textColor="@color/putih"
-        android:fontFamily="@font/montserrat_regular"
+        android:fontFamily="@font/montserrat_black"
         />
 
     <TextView
         android:id="@+id/txtStatusBadan"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="189dp"
+        android:fontFamily="@font/montserrat_black"
+        android:gravity="center_horizontal"
         android:text="Status Badan"
         android:textAlignment="center"
-        android:textSize="24sp"
-        android:gravity="center_horizontal"
-        android:fontFamily="@font/montserrat_regular"
-        android:textColor="@color/putih"
-        />
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/weighing"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
 
 </LinearLayout>

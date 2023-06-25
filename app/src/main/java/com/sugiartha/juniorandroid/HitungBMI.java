@@ -1,5 +1,6 @@
 package com.sugiartha.juniorandroid;
 
+
 public class HitungBMI {
     public String hitungBMI(double beratBadan, double tinggiBadan){
         String statusBadan;
