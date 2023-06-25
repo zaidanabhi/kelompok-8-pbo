@@ -5,42 +5,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".InternalExternalActivity">
+    android:padding="16dp"
+    android:background="@drawable/green4">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="8dp">
+
+        <EditText
+            android:id="@+id/textBaca"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:inputType="textMultiLine"
+            android:background="#FFFFF0"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:ems="10"
+            android:gravity="left|top"
+            android:padding="8dp"
+            android:hint="File Content"/>
+
+    </androidx.cardview.widget.CardView>
 
     <Button
+        android:layout_marginTop="120dp"
         android:id="@+id/btnBuatFile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Buat File"/>
+        android:text="Create File"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background"
+        android:layout_marginBottom="8dp"/>
 
     <Button
         android:id="@+id/btnUbahFile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ubah File"/>
+        android:text="Edit File"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background"
+        android:layout_marginBottom="8dp"/>
 
     <Button
         android:id="@+id/btnBacaFile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Baca File"/>
+        android:text="Read File"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background"
+        android:layout_marginBottom="8dp"/>
 
     <Button
         android:id="@+id/btnHapusFile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hapus File"/>
+        android:text="Delete File"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_background"
+        android:layout_marginBottom="40dp" />
 
-    <EditText
-        android:id="@+id/textBaca"
-        android:layout_width="match_parent"
-        android:layout_height="210dp"
-        android:inputType="textMultiLine"
-        android:background="@android:color/darker_gray"
-        android:ems="10"
-        android:gravity="left|top"
-        android:padding="5dp"
-        android:layout_marginTop="10dp"
-        android:hint="Hasil Baca File"/>
+
 
 </LinearLayout>
