@@ -13,12 +13,11 @@
         android:layout_centerInParent="true"
         android:src="@mipmap/icon"/>
 
-    <TextView
+    <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/logo_id"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="Splash Screen"
-        android:textSize="30dp" />
+        android:layout_marginBottom="172dp"/>
 
 </RelativeLayout>
