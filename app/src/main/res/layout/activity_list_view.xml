@@ -21,8 +21,8 @@
 
         <ImageView
             android:id="@+id/imgView"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
             android:src="@mipmap/ic_launcher" />
 
     </LinearLayout>
@@ -40,12 +40,15 @@
             android:layout_height="wrap_content"
             android:text="Text1"
             android:textSize="16dp"
-            android:textStyle="bold" />
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/roboto_bold" />
 
         <TextView
             android:id="@+id/text2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif"
             android:text="Text2"
             android:textSize="11dp" />
     </LinearLayout>
