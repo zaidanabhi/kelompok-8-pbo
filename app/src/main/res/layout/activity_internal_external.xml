@@ -63,12 +63,9 @@
         android:layout_height="wrap_content"
         android:text="Delete File"
         android:textColor="#FFFFFF"
-<<<<<<< HEAD
         android:background="@drawable/button_background"
-        android:layout_marginBottom="4dp" />
-=======
-        android:background="@drawable/button_background" />
->>>>>>> 2a196e0464c0470c94071bf12df54200e0daed8b
+        android:layout_marginBottom="4dp"/>
+
 
 
 
