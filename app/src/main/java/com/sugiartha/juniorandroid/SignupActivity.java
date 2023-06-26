@@ -16,7 +16,7 @@ public class SignupActivity extends AppCompatActivity {
 
     Spinner spin;
     String spin_val;
-    String[] gender = { "Laki-Laki", "Perempuan" };
+    String[] gender = { "Male", "Female" };
 
     //array of strings used to populate the spinner
 
