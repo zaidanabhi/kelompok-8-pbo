@@ -20,6 +20,7 @@
         android:hint="Angka Pertama"
         android:fontFamily="sans-serif"
         android:textColor="@color/hitam"
+        android:inputType="number"
         android:id="@+id/angka1"/>
 
     <TextView
@@ -35,6 +36,7 @@
         android:fontFamily="sans-serif"
         android:textColor="@color/hitam"
         android:hint="Angka Kedua"
+        android:inputType="number"
         android:id="@+id/angka2"/>
 
     <LinearLayout
