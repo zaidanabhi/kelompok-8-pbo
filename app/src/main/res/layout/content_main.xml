@@ -48,7 +48,10 @@
             android:text="Nama"
             android:id="@+id/nama"
             android:background="@drawable/buttonbulattt"
-            android:textColor="@color/putih"/>
+            android:textColor="@color/colorPrimary"
+            android:drawableTop="@drawable/baseline_drive_file_rename_outline_24"
+            android:padding="5dp"
+            android:textSize="12sp"/>
 
         <Button
             android:layout_width="120dp"
@@ -56,9 +59,12 @@
             android:text="Kalkulator"
             android:id="@+id/kalkulator"
             android:background="@drawable/buttonbulattt"
-            android:textColor="@color/putih"
+            android:textColor="@color/colorPrimary"
             android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"/>
+            android:layout_marginEnd="5dp"
+            android:drawableTop="@drawable/equal_48px"
+            android:padding="5dp"
+            android:textSize="12sp"/>
 
         <Button
             android:layout_width="120dp"
@@ -66,7 +72,10 @@
             android:text="Lingkaran"
             android:id="@+id/lingkaran"
             android:background="@drawable/buttonbulattt"
-            android:textColor="@color/putih"/>
+            android:textColor="@color/colorPrimary"
+            android:drawableTop="@drawable/circle_48px"
+            android:padding="5dp"
+            android:textSize="12sp"/>
     </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -81,7 +90,10 @@
                 android:text="Bilangan"
                 android:id="@+id/bilangan"
                 android:background="@drawable/buttonbulattt"
-                android:textColor="@color/putih"/>
+                android:textColor="@color/colorPrimary"
+                android:drawableTop="@drawable/pin_48px"
+                android:padding="5dp"
+                android:textSize="12sp"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
@@ -89,9 +101,12 @@
                 android:text="Login"
                 android:id="@+id/login"
                 android:background="@drawable/buttonbulattt"
-                android:textColor="@color/putih"
+                android:textColor="@color/colorPrimary"
                 android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"/>
+                android:layout_marginEnd="5dp"
+                android:drawableTop="@drawable/login_48px"
+                android:padding="5dp"
+                android:textSize="12sp"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
@@ -99,7 +114,10 @@
                 android:text="Sign Up"
                 android:id="@+id/signup"
                 android:background="@drawable/buttonbulattt"
-                android:textColor="@color/putih"/>
+                android:textColor="@color/colorPrimary"
+                android:drawableTop="@drawable/person_add_48px"
+                android:padding="5dp"
+                android:textSize="12sp"/>
 
         </LinearLayout>
 
@@ -116,7 +134,10 @@
                 android:text="Calculator"
                 android:id="@+id/calculator"
                 android:background="@drawable/buttonbulattt"
-                android:textColor="@color/putih"/>
+                android:textColor="@color/colorPrimary"
+                android:drawableTop="@drawable/calculate_48px"
+                android:padding="5dp"
+                android:textSize="12sp"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
@@ -124,9 +145,12 @@
                 android:text="BMI"
                 android:id="@+id/bmi"
                 android:background="@drawable/buttonbulattt"
-                android:textColor="@color/putih"
+                android:textColor="@color/colorPrimary"
                 android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"/>
+                android:layout_marginEnd="5dp"
+                android:drawableTop="@drawable/accessibility_new_48px"
+                android:padding="5dp"
+                android:textSize="12sp"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
@@ -134,7 +158,10 @@
                 android:text="List View"
                 android:id="@+id/listview"
                 android:background="@drawable/buttonbulattt"
-                android:textColor="@color/putih"/>
+                android:textColor="@color/colorPrimary"
+                android:drawableTop="@drawable/list_48px"
+                android:padding="5dp"
+                android:textSize="12sp"/>
 
         </LinearLayout>
 
@@ -151,7 +178,10 @@
                 android:text="Catatan"
                 android:id="@+id/catatan"
                 android:background="@drawable/buttonbulattt"
-                android:textColor="@color/putih"/>
+                android:textColor="@color/colorPrimary"
+                android:drawableTop="@drawable/edit_note_48px"
+                android:padding="5dp"
+                android:textSize="12sp"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
@@ -159,9 +189,12 @@
                 android:text="File"
                 android:id="@+id/internalexternal"
                 android:background="@drawable/buttonbulattt"
-                android:textColor="@color/putih"
+                android:textColor="@color/colorPrimary"
                 android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"/>
+                android:layout_marginEnd="5dp"
+                android:drawableTop="@drawable/folder_48px"
+                android:padding="5dp"
+                android:textSize="12sp"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
@@ -169,7 +202,10 @@
                 android:text="Storage"
                 android:id="@+id/storage"
                 android:background="@drawable/buttonbulattt"
-                android:textColor="@color/putih"/>
+                android:textColor="@color/colorPrimary"
+                android:drawableTop="@drawable/inventory_2_48px"
+                android:padding="5dp"
+                android:textSize="12sp"/>
 
         </LinearLayout>
 
@@ -186,7 +222,10 @@
                 android:text="List"
                 android:id="@+id/list"
                 android:background="@drawable/buttonbulattt"
-                android:textColor="@color/putih"/>
+                android:textColor="@color/colorPrimary"
+                android:drawableTop="@drawable/list_alt_48px"
+                android:padding="5dp"
+                android:textSize="12sp"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
@@ -194,9 +233,12 @@
                 android:text="SQLite"
                 android:id="@+id/sqlite"
                 android:background="@drawable/buttonbulattt"
-                android:textColor="@color/putih"
+                android:textColor="@color/colorPrimary"
                 android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"/>
+                android:layout_marginEnd="5dp"
+                android:drawableTop="@drawable/table_48px"
+                android:padding="5dp"
+                android:textSize="12sp"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
@@ -204,7 +246,10 @@
                 android:text="MySQL"
                 android:id="@+id/mysql"
                 android:background="@drawable/buttonbulattt"
-                android:textColor="@color/putih"/>
+                android:textColor="@color/colorPrimary"
+                android:drawableTop="@drawable/database_48px"
+                android:padding="5dp"
+                android:textSize="12sp"/>
 
         </LinearLayout>
 
@@ -220,7 +265,10 @@
                 android:text="CEK GPS"
                 android:id="@+id/gps"
                 android:background="@drawable/buttonbulattt"
-                android:textColor="@color/putih"/>
+                android:textColor="@color/colorPrimary"
+                android:drawableTop="@drawable/location_on_48px"
+                android:padding="5dp"
+                android:textSize="12sp"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
@@ -228,9 +276,12 @@
                 android:text="Seluler"
                 android:id="@+id/seluler"
                 android:background="@drawable/buttonbulattt"
-                android:textColor="@color/putih"
+                android:textColor="@color/colorPrimary"
                 android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"/>
+                android:layout_marginEnd="5dp"
+                android:drawableTop="@drawable/signal_cellular_alt_48px"
+                android:padding="5dp"
+                android:textSize="12sp"/>
 
             <Button
                 android:layout_width="@dimen/lebar"
@@ -238,7 +289,10 @@
                 android:text="Sensor"
                 android:id="@+id/sensor"
                 android:background="@drawable/buttonbulattt"
-                android:textColor="@color/putih"/>
+                android:textColor="@color/colorPrimary"
+                android:drawableTop="@drawable/sensors_48px"
+                android:padding="5dp"
+                android:textSize="12sp"/>
 
         </LinearLayout>
     </LinearLayout>
