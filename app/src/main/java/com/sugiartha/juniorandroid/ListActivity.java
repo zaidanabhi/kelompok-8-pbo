@@ -29,7 +29,7 @@ public class ListActivity extends AppCompatActivity {
         //Membinding atau memformat data
         lvItem = (ListView) findViewById(R.id.list_view);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(ListActivity.this,
-                android.R.layout.simple_list_item_1, android.R.id.text1, namanegara);
+                android.R.layout.simple_list_item_2, android.R.id.text2, namanegara);
 
         //menset data di dalam listview
         lvItem.setAdapter(adapter);
